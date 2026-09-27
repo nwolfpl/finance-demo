@@ -1,0 +1,2349 @@
+<!doctype html>
+<html lang="pt-br" class="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como o sistema lê um fundo imobiliário — 10 exemplos</title>
+  
+  
+  <link rel="stylesheet" href="assets/app.css">
+  
+</head>
+<body class="bg-slate-50">
+  <main class="mx-auto max-w-5xl px-4 py-8">
+    <header class="mb-8">
+      <p class="text-rotulo uppercase tracking-wider text-brand-texto">Demonstração · dado real da CVM</p>
+      <h1 class="mt-1 text-2xl font-semibold text-slate-900">Como o sistema lê um fundo imobiliário</h1>
+      <p class="mt-3 max-w-prose text-sm leading-relaxed text-slate-600">
+        Cada bloco abaixo é o que a ficha de um fundo mostra <strong>acima</strong> da tabela do informe
+        mensal: os indicadores que o sistema mede somados em duas colunas, o que não dá para ler
+        separado numa terceira, e um veredito de uma frase. Nada aqui é opinião de casa de análise —
+        todo número vem do que o administrador declarou à CVM ou do que o fundo efetivamente pagou.
+      </p>
+      <dl class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div class="card card-soft p-3">
+          <dt class="card-titulo">Fundos nesta amostra</dt>
+          <dd class="num mt-1 text-lg font-semibold text-slate-900">10</dd>
+        </div>
+        <div class="card card-soft p-3">
+          <dt class="card-titulo">Acompanhados no sistema</dt>
+          <dd class="num mt-1 text-lg font-semibold text-slate-900">49</dd>
+        </div>
+        <div class="card card-soft p-3">
+          <dt class="card-titulo">Competências lidas</dt>
+          <dd class="num mt-1 text-lg font-semibold text-slate-900">1533</dd>
+        </div>
+        <div class="card card-soft p-3">
+          <dt class="card-titulo">Gerada em</dt>
+          <dd class="num mt-1 text-lg font-semibold text-slate-900">26/09/2026</dd>
+        </div>
+      </dl>
+      <p class="mt-3 max-w-prose text-rotulo leading-relaxed text-slate-500">
+        Os 10 fundos foram escolhidos por <strong>cobertura de dado</strong> — os que têm
+        mais indicadores efetivamente medidos —, e não pelo veredito que receberam. É por isso que
+        há decisões diferentes aqui: um modelo que só mostra o que ele aprova não está sendo mostrado.
+      </p>
+    </header>
+
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            HGLG11
+            <span class="text-sm font-normal text-slate-500">PÁTRIA LOG - FUNDO DE INVESTIMENTO IMOBILIÁRIO</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-hglg11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Logística
+            · <span class="num">P/VP 0,89</span>
+            · <span class="num">PL R$ 7,6 bi</span>
+            · <span class="num">cota R$ 147,86</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre HGLG11</h2>
+    <span class="text-rotulo text-slate-400">
+      10 a favor · 2 contra
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-estavel">Sem contraindicação</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Nada contraindica entrar. Renda por cota — estável em 18 meses de série; hoje R$ 1,17. O que aparece contra — recebíveis — é um eixo isolado, não fundamento virando.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 10</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 1,17.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 165,95.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 13,85%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 0,48%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Entrando 15,9% ao ano de tendência, em 17 meses de série; hoje 608.345.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">115,4% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 1.279.046,06 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 99,7% do resultado de caixa, dentro da faixa usual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +37,6% em 17 meses.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 35,0% de cotas em 32 meses, e o patrimônio cresceu 41,7%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 5,0%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 2</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 04/2026: de 3,53% para 4,44%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,89 está entre os 0% mais baixos da série (faixa 0,89 a 1,00). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,04% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            XPML11
+            <span class="text-sm font-normal text-slate-500">PENINSULA FII RL</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-xpml11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Shoppings
+            · <span class="num">P/VP 0,90</span>
+            · <span class="num">PL R$ 7,1 bi</span>
+            · <span class="num">cota R$ 98,68</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre XPML11</h2>
+    <span class="text-rotulo text-slate-400">
+      9 a favor · 3 contra
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-alerta">Só com a dúvida resolvida</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Antes de entrar, resolva criação de cotas: o fundo criou 93,8% de cotas em 32 meses, e o patrimônio cresceu 91,9%. Quem responde é o relatório gerencial, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 9</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,95.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 110,11.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 01/2026: de 18,61% para 12,39%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 02/2026: de 1,24% para 3,05%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 01/2026: de 608.916 para 733.101, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">96,0% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 20.000.018,36 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 100,0% do resultado de caixa — praticamente tudo o que gerou.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +6,4% em 17 meses.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 3</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 93,8% de cotas em 32 meses, e o patrimônio cresceu 91,9%. As cotas cresceram MAIS que o patrimônio, e o valor patrimonial por cota caiu 1,0% — parte do dinheiro novo entrou abaixo do que a cota valia.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 01/2026: de 4,03% para 6,50%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,90 está entre os 6% mais baixos da série (faixa 0,89 a 1,01). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,06% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            RZTR11
+            <span class="text-sm font-normal text-slate-500">FUNDO DE INVESTIMENTO IMOBILIÁRIO RIZA TERRAX</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-rztr11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Agro — terras
+            · <span class="num">P/VP 0,85</span>
+            · <span class="num">PL R$ 1,8 bi</span>
+            · <span class="num">cota R$ 83,30</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre RZTR11</h2>
+    <span class="text-rotulo text-slate-400">
+      8 a favor · 4 contra
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-pior">Ficar de fora por ora</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Não é hora de entrar: 2 fundamentos graves apertam ao mesmo tempo — alavancagem, criação de cotas. Quem responde é o relatório gerencial de 10/2025, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 8</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,85.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 97,78.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 11/2025: de 2,86% para 0,02%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 146.997.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">87,5% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 11.149.326,22 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 100,0% do resultado de caixa — praticamente tudo o que gerou.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +1,6% em 17 meses.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 4</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 10/2025: de 19,08% para 29,28%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 30,7% de cotas em 32 meses, e o patrimônio cresceu 27,0%. As cotas cresceram MAIS que o patrimônio, e o valor patrimonial por cota caiu 2,8% — parte do dinheiro novo entrou abaixo do que a cota valia.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 12/2025: de 5,52% para 1,82%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,85 está entre os 0% mais baixos da série (faixa 0,88 a 1,06). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,09% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            BTLG11
+            <span class="text-sm font-normal text-slate-500">BTGP LOGISTICA FII</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-btlg11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Logística
+            · <span class="num">P/VP 0,93</span>
+            · <span class="num">PL R$ 7,6 bi</span>
+            · <span class="num">cota R$ 99,58</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre BTLG11</h2>
+    <span class="text-rotulo text-slate-400">
+      10 a favor · 2 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-alerta">Só com a dúvida resolvida</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Antes de entrar, resolva payout: distribuiu 108,9% do resultado de caixa do período — além do que a operação gerou. Quem responde é o relatório gerencial de 06/2026, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 10</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,81.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 106,69.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 10/2025: de 15,28% para 12,91%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Cedendo 74,4% ao ano de tendência, em 17 meses de série; hoje 0,84%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 05/2026: de 6,24% para 19,35%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">100,2% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">36,4% mais cotistas em 17 meses.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +68,3% em 17 meses — o fundo está captando. Emissão abaixo do valor patrimonial dilui quem já é cotista.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 149,0% de cotas em 32 meses, e o patrimônio cresceu 165,0%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 6,4%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 2</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 108,9% do resultado de caixa do período — além do que a operação gerou. Pode ser reserva de trimestres anteriores ou rendimento saindo do capital; o relatório gerencial do fundo diz qual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,93 está entre os 0% mais baixos da série (faixa 0,93 a 1,01). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,07% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            FTCE11
+            <span class="text-sm font-normal text-slate-500">OPPORTUNITY FUNDO DE INVESTIMENTO IMOBILIÁRIO</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-ftce11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Sem segmento definido
+            · <span class="num">P/VP 0,98</span>
+            · <span class="num">PL R$ 4,0 bi</span>
+            · <span class="num">cota R$ 2.914,90</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre FTCE11</h2>
+    <span class="text-rotulo text-slate-400">
+      8 a favor · 4 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-alerta">Só com a dúvida resolvida</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Antes de entrar, resolva alavancagem: subindo 15,7% ao ano de tendência, em 17 meses de série — passivo em 18,0% do ativo, faixa elevada. Quem responde é o relatório gerencial, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 8</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 2974,18.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 23,12%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 124.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">87,3% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 95,0% do resultado de caixa, dentro da faixa usual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +11,7% em 17 meses.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 32,6% de cotas em 32 meses, e o patrimônio cresceu 40,9%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 6,3%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 4</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Subindo 15,7% ao ano de tendência, em 17 meses de série — passivo em 18,0% do ativo, faixa elevada.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 09/2025: de 3,14% para 2,37%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Provisões
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 11/2025: de 0,11% para 0,18%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,98 está entre os 0% mais baixos da série (faixa 0,98 a 1,01). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 2</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Passivo não aberto:</strong> 59,7% do passivo está no balde que a CVM não abre — aqui a alavancagem diz o tamanho da dívida, não a natureza dela.
+            </span>
+          </li>
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,10% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            HGRE11
+            <span class="text-sm font-normal text-slate-500">PÁTRIA ESCRITÓRIOS FUNDO DE INVESTIMENTO IMOBILIÁRIO</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-hgre11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Sem segmento definido
+            · <span class="num">P/VP 0,77</span>
+            · <span class="num">PL R$ 1,8 bi</span>
+            · <span class="num">cota R$ 116,53</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre HGRE11</h2>
+    <span class="text-rotulo text-slate-400">
+      9 a favor · 2 contra
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-alerta">Só com a dúvida resolvida</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Antes de entrar, resolva patrimônio por cota: mudou de patamar em 12/2025: de R$ 155,82 para R$ 147,58, e ficou lá. Quem responde é o relatório gerencial de 12/2025, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 9</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,85.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Cedendo 55,3% ao ano de tendência, em 17 meses de série; hoje 7,54%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 02/2026: de 3,19% para 5,40%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 16 meses de série; hoje 143.912.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">93,8% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 447.285,74 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 99,5% do resultado de caixa, dentro da faixa usual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,77 no percentil 24 da série (faixa 0,71 a 0,89).</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio líquido
+                    <span class="text-rotulo font-normal text-slate-400">· mês</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">cresceu 2,68% na competência de 08/2026.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 2</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 12/2025: de R$ 155,82 para R$ 147,58, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Passivo
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· mês</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">subiu 22,12% na competência de 08/2026.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,06% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            KNCR11
+            <span class="text-sm font-normal text-slate-500">KINEA RENDIMENTOS IMOBILIARIOS FII RESPONSABILIDADE LIMITADA</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-kncr11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Papel (CRI)
+            · <span class="num">P/VP 1,04</span>
+            · <span class="num">PL R$ 11,0 bi</span>
+            · <span class="num">cota R$ 106,38</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre KNCR11</h2>
+    <span class="text-rotulo text-slate-400">
+      11 a favor · 0 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-positivo">Candidato a entrar</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Nada nos fundamentos desaconselha entrar: 11 indicadores a favor e nenhum contra. Renda por cota — estável em 18 meses de série; hoje R$ 1,15. O que falta decidir é preço, não fundamento.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 11</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 1,15.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 102,64.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 10/2025: de 1,93% para 8,03%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Entrando 31,9% ao ano de tendência, em 17 meses de série; hoje 586.131.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">94,0% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 103,3% do resultado de caixa — praticamente tudo o que gerou.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +41,2% em 17 meses.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 1,04 no percentil 29 da série (faixa 1,01 a 1,05).</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 87,6% de cotas em 32 meses, e o patrimônio cresceu 90,5%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 1,6%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Passivo
+                    <span class="text-rotulo font-normal text-slate-400">· mês</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">cedeu 7,90% na competência de 08/2026.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 0</h3>
+        
+          <p class="text-rotulo text-slate-400">Nenhum indicador medido aponta para o lado que aperta.</p>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,09% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            XPLG11
+            <span class="text-sm font-normal text-slate-500">XP LOG FII RL</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-xplg11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Logística
+            · <span class="num">P/VP 0,88</span>
+            · <span class="num">PL R$ 5,4 bi</span>
+            · <span class="num">cota R$ 92,39</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre XPLG11</h2>
+    <span class="text-rotulo text-slate-400">
+      9 a favor · 2 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-alerta">Só com a dúvida resolvida</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Antes de entrar, resolva criação de cotas: o fundo criou 73,5% de cotas em 32 meses, e o patrimônio cresceu 62,0%. Quem responde é o relatório gerencial, no botão de documentos aqui em cima.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 9</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,82.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 104,65.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 11/2025: de 1,47% para 0,87%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 1,36%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 366.494.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">112,0% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 99,3% do resultado de caixa, dentro da faixa usual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +61,6% em 17 meses — o fundo está captando. Emissão abaixo do valor patrimonial dilui quem já é cotista.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 2</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-pior"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="tag tag-pior ml-1">grave</span>
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 73,5% de cotas em 32 meses, e o patrimônio cresceu 62,0%. As cotas cresceram MAIS que o patrimônio, e o valor patrimonial por cota caiu 6,6% — parte do dinheiro novo entrou abaixo do que a cota valia.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,88 está entre os 0% mais baixos da série (faixa 0,88 a 1,00). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 2</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Passivo não aberto:</strong> 91,1% do passivo está no balde que a CVM não abre — aqui a alavancagem diz o tamanho da dívida, não a natureza dela.
+            </span>
+          </li>
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,05% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            HGRU11
+            <span class="text-sm font-normal text-slate-500">PÁTRIA RENDA URBANA - FUNDO DE INVESTIMENTO IMOBILIÁRIO</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-hgru11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Renda urbana e varejo
+            · <span class="num">P/VP 0,89</span>
+            · <span class="num">PL R$ 3,2 bi</span>
+            · <span class="num">cota R$ 113,82</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre HGRU11</h2>
+    <span class="text-rotulo text-slate-400">
+      10 a favor · 1 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-estavel">Sem contraindicação</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Nada contraindica entrar. Renda por cota — estável em 18 meses de série; hoje R$ 0,95. O que aparece contra — p/vp na própria história — é um eixo isolado, não fundamento virando.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 10</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 18 meses de série; hoje R$ 0,95.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 128,11.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Alavancagem
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Mudou de patamar em 11/2025: de 12,86% para 10,12%, e ficou lá.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 2,77%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 232.516.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">115,0% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 14.352.638,07 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 104,4% do resultado de caixa — praticamente tudo o que gerou.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Resultado contábil e de caixa na mesma direção.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Patrimônio +9,0% em 17 meses.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 34,9% de cotas em 32 meses, e o patrimônio cresceu 36,2%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 1,0%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 1</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,89 está entre os 0% mais baixos da série (faixa 0,90 a 1,03). O mercado reprecificou o fundo.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,05% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+      <section class="mb-8">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 border-b border-slate-200 pb-2 dark:border-white/10">
+          <h2 class="text-lg font-semibold text-slate-900">
+            HSML11
+            <span class="text-sm font-normal text-slate-500">HSI - MALLS FII RESP. LIMITADA</span>
+          </h2>
+          <p class="text-rotulo text-slate-500">
+            
+              <a href="fundo-hsml11.html" class="font-medium text-brand-texto hover:underline">relatório completo →</a>
+              ·
+            
+            Sem segmento definido
+            · <span class="num">P/VP 0,84</span>
+            · <span class="num">PL R$ 2,1 bi</span>
+            · <span class="num">cota R$ 82,76</span>
+          </p>
+        </div>
+        
+<div class="card card-soft mt-4 border-brand/40 p-4">
+  <div class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+    <h2 class="secao-titulo">O veredito sobre HSML11</h2>
+    <span class="text-rotulo text-slate-400">
+      10 a favor · 1 contra · 1 sem série
+      · leitura até 08/2026
+    </span>
+  </div>
+
+  <div class="rounded-xl border border-brand/40 bg-brand/5 p-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag tag-estavel">Sem contraindicação</span>
+      
+      <span class="text-rotulo uppercase tracking-wider text-slate-400">
+        leitura de quem ainda não tem posição
+        
+      </span>
+    </div>
+    
+    <p class="mt-2 max-w-prose text-sm leading-relaxed text-slate-700">Nada contraindica entrar. Renda por cota — subindo 10,7% ao ano de tendência, em 18 meses de série; hoje R$ 0,75. O que aparece contra — caixa — é um eixo isolado, não fundamento virando.</p>
+  </div>
+
+  
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <div>
+        <h3 class="card-titulo mb-2">Pesa a favor · 10</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Renda por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Subindo 10,7% ao ano de tendência, em 18 meses de série; hoje R$ 0,75.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Patrimônio por cota
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje R$ 98,93.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Recebíveis
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 4,38%.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Cotistas
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">estável em 17 meses de série; hoje 186.884.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    De onde vem o resultado
+                    <span class="text-rotulo font-normal text-slate-400">· resultado</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">130,7% do resultado vem de aluguel e juro, na mediana de 2 trimestres: a operação sustenta o que o fundo distribuiu. Passar de 100% é normal — as despesas saem depois das receitas. No trimestre de 06/2026 entraram R$ 68.780.875,03 de venda de imóvel, que não se repete.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Payout
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Distribuiu 96,0% do resultado de caixa, dentro da faixa usual.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa no resultado
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Prejuízo contábil com caixa positivo: a perda é reavaliação de ativo, não dinheiro que deixou de entrar.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    P/VP na própria história
+                    <span class="text-rotulo font-normal text-slate-400">· saúde</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">P/VP de 0,84 no percentil 41 da série (faixa 0,76 a 0,92).</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Criação de cotas
+                    <span class="text-rotulo font-normal text-slate-400">· cotas</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">O fundo criou 35,2% de cotas em 32 meses, e o patrimônio cresceu 42,3%. As cotas cresceram MENOS que o patrimônio, então o valor patrimonial por cota subiu 5,3%: quem já estava não foi diluído.</span>
+                </span>
+              </li>
+            
+              <li class="flex items-start gap-2">
+                <span class="ponto ponto-estavel mt-1.5" aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Passivo
+                    <span class="text-rotulo font-normal text-slate-400">· mês</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">cedeu 2,93% na competência de 08/2026.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div>
+        <h3 class="card-titulo mb-2">Pesa contra · 1</h3>
+        
+          <ul class="space-y-2">
+            
+              <li class="flex items-start gap-2">
+                
+                <span class="ponto mt-1.5 ponto-alerta"
+                      aria-hidden="true"></span>
+                <span class="min-w-0">
+                  <span class="block text-dado font-medium text-slate-700">
+                    Caixa
+                    
+                    <span class="text-rotulo font-normal text-slate-400">· rumo</span>
+                  </span>
+                  <span class="block text-rotulo text-slate-500">Secando 42,4% ao ano de tendência, em 17 meses de série; hoje 3,25%.</span>
+                </span>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  
+
+  
+    <div class="mt-4 border-t border-slate-100 pt-3 dark:border-white/10">
+      <h3 class="card-titulo mb-2">O que não dá para ler · 1</h3>
+      <ul class="space-y-1.5">
+        
+          <li class="flex items-start gap-2">
+            <span class="ponto ponto-neutro mt-1.5" aria-hidden="true"></span>
+            <span class="text-rotulo text-slate-500">
+              <strong class="font-medium text-slate-600">Taxa de administração:</strong> o informe declara 0,08% ao mês, e esta é a métrica que a CVM entrega errada por um fator de ~20 numa minoria constante dos fundos (8 dos 47 conferidos um a um) — confira no regulamento antes de usar no custo.
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <p class="mt-3 max-w-prose border-t border-slate-100 pt-2 text-rotulo leading-relaxed text-slate-500 dark:border-white/10">
+    <strong class="text-brand-texto">A régua, para você poder discordar dela:</strong>
+    dois fundamentos <strong>graves</strong> apertando ao mesmo tempo pedem revisão da posição;
+    um pede vigilância; nenhum, com mais indicadores a favor do que contra, mantém.
+    Grave é só o que muda a decisão sozinho — renda por cota, patrimônio por cota, alavancagem
+    já elevada e subindo, rendimento distribuído além do que a operação gerou, resultado que
+    não vem de operar e emissão que diluiu.
+    <strong>Ressalva não vira ponto</strong>, e a taxa de administração do informe não entra na
+    conta: a CVM a entrega errada por um fator de ~20 numa minoria constante dos fundos — 8 dos 47
+    conferidos um a um contra o regulamento.
+    Cada linha acima cita um número que a própria ficha mediu — nada aqui é opinião de terceiro.
+  </p>
+</div>
+
+      </section>
+    
+
+    <footer class="mt-10 border-t border-slate-200 pt-4 dark:border-white/10">
+      <h2 class="secao-titulo">De onde vem cada número</h2>
+      <ul class="mt-2 max-w-prose space-y-1 text-rotulo leading-relaxed text-slate-500">
+        <li><strong class="text-slate-600">Informe mensal da CVM</strong> — patrimônio, valor patrimonial por cota, cotistas e taxa declarada.</li>
+        <li><strong class="text-slate-600">Balanço mensal da CVM</strong> — dívida, recebíveis, caixa e provisões, com a identidade contábil conferida antes de entrar.</li>
+        <li><strong class="text-slate-600">Informe trimestral</strong> — o resultado de caixa, que diz se o rendimento saiu da operação ou de venda de imóvel.</li>
+        <li><strong class="text-slate-600">Rendimento pago</strong> — o que caiu na conta de quem tinha a cota, e não o <em>yield</em> que o administrador declara.</li>
+        <li><strong class="text-slate-600">Pregão</strong> — preço de fechamento, para o P/VP e a faixa de 52 semanas.</li>
+      </ul>
+      <p class="mt-3 max-w-prose text-rotulo leading-relaxed text-slate-500">
+        A tendência de cada série é medida com Theil-Sen e Mann-Kendall, e a mudança de patamar com
+        Pettitt — estatística não paramétrica padrão de série temporal, escolhida porque mediana
+        aguenta um mês atípico que uma reta de mínimos quadrados não aguentaria. O método não foi
+        validado contra retorno futuro, e a página não promete previsão: ela diz para onde cada
+        fundamento declarado está indo, e desde quando.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
