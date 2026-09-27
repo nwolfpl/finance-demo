@@ -347,10 +347,23 @@
     });
   }
 
+  // Registrado na Paleta, e não chamado direto: o canvas do Chart.js é bitmap e não
+  // acompanha a troca de tema como o CSS. `aoRepintar` guarda o desenho E o executa
+  // agora; no toggle, a Paleta destrói o gráfico e chama isto de novo. Sem o registro,
+  // alternar o tema deixava os três gráficos da ficha com os eixos da cor anterior —
+  // cinza-claro sobre fundo quase preto, ilegíveis até um F5.
+  function iniciar() {
+    if (window.Paleta && window.Paleta.aoRepintar) {
+      window.Paleta.aoRepintar(desenhar);
+    } else {
+      desenhar();
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', desenhar);
+    document.addEventListener('DOMContentLoaded', iniciar);
   } else {
-    desenhar();
+    iniciar();
   }
 })();
 
@@ -476,10 +489,23 @@
     });
   }
 
+  // Registrado na Paleta, e não chamado direto: o canvas do Chart.js é bitmap e não
+  // acompanha a troca de tema como o CSS. `aoRepintar` guarda o desenho E o executa
+  // agora; no toggle, a Paleta destrói o gráfico e chama isto de novo. Sem o registro,
+  // alternar o tema deixava os três gráficos da ficha com os eixos da cor anterior —
+  // cinza-claro sobre fundo quase preto, ilegíveis até um F5.
+  function iniciar() {
+    if (window.Paleta && window.Paleta.aoRepintar) {
+      window.Paleta.aoRepintar(desenhar);
+    } else {
+      desenhar();
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', desenhar);
+    document.addEventListener('DOMContentLoaded', iniciar);
   } else {
-    desenhar();
+    iniciar();
   }
 })();
 
@@ -578,10 +604,23 @@
     });
   }
 
+  // Registrado na Paleta, e não chamado direto: o canvas do Chart.js é bitmap e não
+  // acompanha a troca de tema como o CSS. `aoRepintar` guarda o desenho E o executa
+  // agora; no toggle, a Paleta destrói o gráfico e chama isto de novo. Sem o registro,
+  // alternar o tema deixava os três gráficos da ficha com os eixos da cor anterior —
+  // cinza-claro sobre fundo quase preto, ilegíveis até um F5.
+  function iniciar() {
+    if (window.Paleta && window.Paleta.aoRepintar) {
+      window.Paleta.aoRepintar(desenhar);
+    } else {
+      desenhar();
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', desenhar);
+    document.addEventListener('DOMContentLoaded', iniciar);
   } else {
-    desenhar();
+    iniciar();
   }
 })();
 

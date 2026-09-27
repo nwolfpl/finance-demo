@@ -8,6 +8,26 @@
   
   <link rel="stylesheet" href="assets/app.css">
   
+  
+<script>
+  (function () {
+    var gerada = document.documentElement.classList.contains('dark');
+    try {
+      var salvo = localStorage.getItem('tema');
+      var escuro = salvo === 'escuro' ||
+        (!salvo && (gerada || window.matchMedia('(prefers-color-scheme: dark)').matches));
+      document.documentElement.classList.toggle('dark', escuro);
+    } catch (e) {}
+    window.alternarTema = function () {
+      var escuro = document.documentElement.classList.toggle('dark');
+      try { localStorage.setItem('tema', escuro ? 'escuro' : 'claro'); } catch (e) {}
+      if (window.Paleta && window.Paleta.repintar) window.Paleta.repintar();
+      var rotulo = document.getElementById('rotulo-tema');
+      if (rotulo) rotulo.textContent = escuro ? 'Tema claro' : 'Tema escuro';
+    };
+  })();
+</script>
+
 </head>
 <body class="bg-slate-50">
   <div class="mx-auto max-w-6xl px-4 py-6">
@@ -16,7 +36,27 @@
         <a href="index.html" class="hover:underline">← todos os fundos</a> · 
         Relatório de fundo · dado declarado à CVM
       </p>
-      <p class="text-rotulo text-slate-400">gerado em 26/09/2026</p>
+      <div class="flex items-center gap-3">
+        <span class="text-rotulo text-slate-400">gerado em 26/09/2026</span>
+        
+<button type="button" onclick="alternarTema()"
+        class="btn btn-linha shrink-0"
+        aria-label="Alternar entre tema claro e escuro">
+  <span aria-hidden="true">◐</span>
+  <span id="rotulo-tema" class="ml-1">Tema escuro</span>
+</button>
+<script>
+  // O rótulo nasce dizendo "Tema escuro" para quem abre no claro; se a página já abriu no
+  // escuro, ele é corrigido aqui — o script do topo roda antes deste elemento existir.
+  (function () {
+    var rotulo = document.getElementById('rotulo-tema');
+    if (rotulo && document.documentElement.classList.contains('dark')) {
+      rotulo.textContent = 'Tema claro';
+    }
+  })();
+</script>
+
+      </div>
     </header>
 
     

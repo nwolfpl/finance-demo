@@ -8,11 +8,51 @@
   
   <link rel="stylesheet" href="assets/app.css">
   
+  
+<script>
+  (function () {
+    var gerada = document.documentElement.classList.contains('dark');
+    try {
+      var salvo = localStorage.getItem('tema');
+      var escuro = salvo === 'escuro' ||
+        (!salvo && (gerada || window.matchMedia('(prefers-color-scheme: dark)').matches));
+      document.documentElement.classList.toggle('dark', escuro);
+    } catch (e) {}
+    window.alternarTema = function () {
+      var escuro = document.documentElement.classList.toggle('dark');
+      try { localStorage.setItem('tema', escuro ? 'escuro' : 'claro'); } catch (e) {}
+      if (window.Paleta && window.Paleta.repintar) window.Paleta.repintar();
+      var rotulo = document.getElementById('rotulo-tema');
+      if (rotulo) rotulo.textContent = escuro ? 'Tema claro' : 'Tema escuro';
+    };
+  })();
+</script>
+
 </head>
 <body class="bg-slate-50">
   <main class="mx-auto max-w-5xl px-4 py-8">
     <header class="mb-8">
-      <p class="text-rotulo uppercase tracking-wider text-brand-texto">Demonstração · dado real da CVM</p>
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <p class="text-rotulo uppercase tracking-wider text-brand-texto">Demonstração · dado real da CVM</p>
+        
+<button type="button" onclick="alternarTema()"
+        class="btn btn-linha shrink-0"
+        aria-label="Alternar entre tema claro e escuro">
+  <span aria-hidden="true">◐</span>
+  <span id="rotulo-tema" class="ml-1">Tema escuro</span>
+</button>
+<script>
+  // O rótulo nasce dizendo "Tema escuro" para quem abre no claro; se a página já abriu no
+  // escuro, ele é corrigido aqui — o script do topo roda antes deste elemento existir.
+  (function () {
+    var rotulo = document.getElementById('rotulo-tema');
+    if (rotulo && document.documentElement.classList.contains('dark')) {
+      rotulo.textContent = 'Tema claro';
+    }
+  })();
+</script>
+
+      </div>
       <h1 class="mt-1 text-2xl font-semibold text-slate-900">Como o sistema lê um fundo imobiliário</h1>
       <p class="mt-3 max-w-prose text-sm leading-relaxed text-slate-600">
         Cada bloco abaixo é o que a ficha de um fundo mostra <strong>acima</strong> da tabela do informe
